@@ -1,0 +1,306 @@
+  db.potions.find().count()
+  db.potions.find()
+  db.potions.find().count()
+  db.potions.find()
+  db.potions.find().count()
+  db.potions.find().count
+  db.potions.find()
+  db.users.find()
+db.users.drop()
+  db.users.find()
+db.users.updateMany({},{$set: {'username': 'gabriel'}})
+db.users.updateMany({},{$set: {'username': 'gabriel'})
+db.users.updateMany({},{$set: {'username'})
+  db.users.find()
+  db.usernames.find()
+db.users.find()
+show collections
+db.potions.find()
+)
+  ]
+    }
+      $set: { marchand_id: { $toString: "$marchand_id" } }
+    {
+  [
+  {}, // Appliquer à tous les documents
+db.potions.updateMany(
+db.marchands.updateMany({}, {$replace: {'nom':'nom_marchand'}})
+db.marchands.updateMany({}, {$replace{'nom':'nom_marchand'}})
+db.marchands.find()
+db.marchands.Find()
+db.potions.find()
+db.potions.aggregate([ {$unwind: "$ingredients"}, {$group: {_id: "$ingredients"}}])
+db.potions.aggregate([ {$unwid: "$ingredients"}, {$group: {_id: "$ingredients"}}])
+db.potions.aggregate([ {$unwind: "$ingredients"}])
+db.potions.aggregate([ {$unwind: "$ingredients"}, {$group: {_id: "$ingredients"}}, {$count:"nombreIngredients"}])
+db.potions.aggregate([ {$unwid: "$ingredients"}, {$group: {_id: "$ingredients"}}, {$count:"nombreIngredients"}])
+db.potions.aggregate([ {$unwid: "$ingredients"} {$group: {_id: "$ingredients"}},
+db.marchands.find()
+show collections
+])
+  }
+    $unwind: '$marchand'
+  {
+  },
+    }
+      as: 'marchand'
+      foreignField: '_id',
+      localField: 'marchand_id',
+      from: 'marchands',
+    $lookup: {
+  {
+db.potions.aggregate([
+db.potions.updateMany({}, { $unset: { marchand_id_old: 1 } })
+)
+  { $set: { marchand_id: ObjectId('67ec00007f70be9f0b6b1505') } }
+  { marchand_id: 'Le gardien des rêves' },
+db.potions.updateMany(
+)
+  { $set: { marchand_id: ObjectId('67ec00007f70be9f0b6b1504') } }
+  { marchand_id: 'Marchand Itinérant' },
+db.potions.updateMany(
+)
+  { $set: { marchand_id: ObjectId('67ec00007f70be9f0b6b1503') } }
+  { marchand_id: 'Marchand de potions' },
+db.potions.updateMany(
+)
+  { $set: { marchand_id: ObjectId('67ec00007f70be9f0b6b1502') } }
+  { marchand_id: "L'homme de fer" },
+db.potions.updateMany(
+)
+  { $set: { marchand_id: ObjectId('67ec00007f70be9f0b6b1501') } }
+  { marchand_id: 'Le marchand de la forêt' },
+db.potions.updateMany(
+])
+  { _id: ObjectId('67ec00007f70be9f0b6b1505'), nom: 'Le gardien des rêves' }
+  { _id: ObjectId('67ec00007f70be9f0b6b1504'), nom: 'Marchand Itinérant' },
+  { _id: ObjectId('67ec00007f70be9f0b6b1503'), nom: 'Marchand de potions' },
+  { _id: ObjectId('67ec00007f70be9f0b6b1502'), nom: "L'homme de fer" },
+  { _id: ObjectId('67ec00007f70be9f0b6b1501'), nom: 'Le marchand de la forêt' },
+db.marchands.insertMany([
+show collections
+show containers
+db.marchands.find()
+db.potions.aggregate([{$group: {"_id": "$marchand_id", "total": {$sum: 1}, "avg_price": {$avg: "$price"}}}])
+b.potions.aggregate([{$group: {"_id": "$marchand_id", "total": {$sum: 1}}}])
+db.potions.aggregate([{$group: {"_id": "$marchand_id"}}])
+db.potions.aggregate([{$group: {"_id": "$vendor_id"}}])
+db.potions.find()
+db.potions.updateOne( { _id: ObjectId('67ebc5327f70be9f0b6b1410') }, { $set: { prix: 123.00}})
+db.potions.updateOne( { _id: ObjectId('67ebc5327f70be9f0b6b1410') }, { $set: { prix: 123.00}}})
+   { 
+db.potions.updateOne({ _id: ObjectId('67ebc5327f70be9f0b6b1410') },)
+db.potions.find()
+)
+   }
+      } 
+         marchand_id: 'Le marchand de la forêt'
+         score: 89, 
+         }, 
+            'intelligence': 10 
+            'agilité': 2, 
+         effets: { 
+         categorie: ['premium', 'rare'], 
+         ingredients: ['poussière de fée', 'plume de phénix', 'larmes de sirène'], 
+         nom: 'Invisibilité', 
+      $set: { 
+   { 
+   { _id: ObjectId('67ebc5327f70be9f0b6b1410') },
+db.potions.updateOne(
+)
+}
+   } 
+      marchand_id:'Le marchand de la forêt',
+      score: 89, 
+      effets: {'agilité': 2, 'intelligence':10, 
+      categorie: ['premiun', 'rare'], 
+      ingredients: ['poussière de fée', 'plume de phénix', 'larmes de sirène'], 
+   { $set: { nom: 'Invisibilité', 
+   { _id: ObjectId('67ebc5327f70be9f0b6b1410') },
+db.potions.updateOne(
+db.potions.find()
+db.potions.find
+)
+  ]
+      }
+         "marchand_id": "Le gardien des rêves"
+         "score": 100,
+         "prix": 59.99, 
+         "effets": { "chance": 10, "vitesse": 5 },
+         "categories": ["premium", "rare"],
+         "ingredients": ["poussière de fée", "nuage de chance"],
+         "nom": "Chance", 
+      {
+      },
+         "marchand_id": "Le gardien des rêves"
+         "score": 45,
+         "prix": 7.99,
+         "effets": { "force": 2, "vitesse": 1 },
+         "categories": ["effective", "budget"],
+         "ingredients": ["menthe de feu", "poussière de sable"],
+         "nom": "Dormeur",
+      {
+      },
+         "marchand_id": "Marchand Itinérant"
+         "score": 85,
+         "prix": 12.99,
+         "effets": { "force": 10, "vitesse": 5 },
+         "categories": ["effective", "premium"],
+         "ingredients": ["feuille à quatre trelfe", "poussière de feu"],
+         "nom": "Force",
+      {
+      },
+         "marchand_id": "Marchand de potions"
+         "score": 10,
+         "prix": 20.0,
+         "effets": { "force": 5, "agilté": 3 },
+         "categories": ["effective", "budget"],
+         "ingredients": ["poussière de fée", "poussière de feu"],
+         "nom": "Energie",
+      {
+      },
+         "marchand_id": "L'homme de fer"
+         "prix": 45.99,
+         "score": 90,
+         "effets": { "force": 8, "vitesse": 5 },
+         "categories": ["premium", "rare"],
+         "ingredients": ["flamme du dragon", "poussière de feu"],
+         "nom": "Feu d'Enfer",
+      {
+      },
+         "marchand_id": "L'homme de fer"
+         "prix": 25.5,
+         "score": 50,
+         "effets": { "force": 3, "vitesse": 2 },
+         "categories": ["effective", "budget"],
+         "ingredients": ["herbe de la régénération", "poussière de fée"],
+         "nom": "Régénération",
+      {
+   [
+db.potions.insertMany(
+db
+db.potions.find()
+db.potions.updateMany({}, { $unset: { 'marchand': '' } })
+db.potions.find()
+db.potions.find()
+db.potions.updateMany({}, {$set:{'categorie':[], 'effets':{},'score': 0, 'prix': 0.00}})
+db.potions.updateMany({}, {$set:{'categorie':[], 'effets':{},'score': }})
+db.potions.updateMany({}, {$set:{'categorie':[]},{'effets':{}},{'score': }})
+db.potions.updateMany({}, {$set{'categorie':[]},{'effets':{}},{'score': }})
+db.potions.find()
+db.potions.updateMany({}, { $set: { "ingredients": [] }})
+db.potions.find().count()
+db.potions.find().count
+db.potions.find()
+db.potions.find().count()
+db.potions.find().count
+db.potions.find()
+db.potions.updateMany({}, {$rename: {"vendor":"marchand"}})
+db.potions.find()
+db.potions.updateMany({}, {$rename: {"name":"nom"}})
+db.potions.find()
+db.potions.updateOne({"name": "Invisibility"}, {$set: {"name":"Invisibilité"}})
+db.potions.find()
+db.vendors.find()
+db.potions.updateOne({"name": "Invisibility"}, {$set: {"vendor":"Gabriel Lefort"}})
+db.vendors.find()
+db.vendor.find()
+db.potions.find()
+db.potions.insertOne({"name": "Invisibility", "vendor": "Kettlecooked"})
+db.potions.find()
+db.potions.drop({"_id": "67ebc0e57f70be9f0b6b140f"})
+db.potions.find()
+db.potions.find("ingredients")
+db.potions.find(ingredients)
+db.potions.find({ingredients})
+db.potions.find({"ingredients"})
+clear
+db.potions.find({"ingredients":42})
+db.potions.find()
+db.potions.updateOne({"name": "Invisibility"}, { $inc: { "count": 1 }})
+db.potions.find()
+db.potions.updateOne({"name": "Invisibility"}, { $set: { "ratings.strength": 4 } })
+db.potions.find()
+db.potions.updateOne({"name": "Invisibility"}, { $set: { "ratings.strength": 1 } })
+db.potions.updateOne({"name": "Invisibility"}, { $set: { "ratings.strength": 1 } }})
+db.potions.find()
+db.potions.updateOne({"name": "Invisibility"}, { $set: { "ratings": {"strength": 2, "flavor": 5} }})
+db.potions.find()
+db.potions.updateOne({"name": "Invisibility"}, { $set: { "ingredients": ["newt toes", 42, "laughter"], "category": ["tasty", "effective"] }})
+"laughter"], ...db.potions.updateOne({"name": "Invisibility"}, { $set: { "ingredients": ["newt toes", 42, "laughter"], "category": ["tasty", "effective"] }})
+db.potions.find()
+db.potions.updateMany({"name": "Invisibility"}, { $set: { "tryDate": new Date() }})
+db.potions.find()
+db.potions.updateOne({"name": "Invisibility"}, { $set: { "tryDate": new Date(2025,4,1) }})
+db.potions.find()
+db.potions.updateMany({}, { $set: { "ingredients": [] }})
+db.potions.find()
+db.potions.find().count()
+db.potions.find({"name": { $regex: "in" }})
+db.potions.find()
+db.potions.insertMany([{"name": "Love", "vendor": "Brewers"}, {"name": "Shrinking", "vendor": "Kettlecooked"}])
+db.potions.find({"name": "Invisibility"})
+db.potions.find(["name": "Invisibility"})
+db.potions.find(["name":"Invisibility"})
+clear
+db.potions.find()
+show collections
+db.potions.find()
+db.potions.insertMany([{"name": "Love", "vendor": "Brewers"}, {"name": "Shrinking", "vendor": "Kettlecooked"}])
+db.potions.insertOne({"name": "Invisibility", "vendor": "Kettlecooked"})
+show collections
+db.movies.drop
+movies.drop
+show collections
+db.drop
+show collections
+show dbs
+use esgi
+show dbs
+exit
+show collections
+use admin
+show dbs
+exit
+show dbs
+show data
+shows data
+exit
+db.heroes.drop()
+db.heroes.find()
+db.heroes.insertMany([{"FirstName": "Bruce", "LastName": "Wayne", "Email": "bwayne@Wayneenterprises.com"},{"FirstName": "Tony", "LastName": "Stark", "Email": "stronger@avengers.com"}])
+show collections
+use esgi
+show dbs
+exit
+mongosh -u mongodb -p mongodb --authenticationDatabase admin
+show dbs
+exit
+db.createCollection('movies')
+show collectionsdb.createCollection('movies')
+show collections
+use esgi
+show dbs
+shows dbs
+exit
+mongoimport --db esgi --collection movies --file movies.json
+*
+mongoimport --db esgi --collection movies --file movies.json
+show collections
+use esgi
+ue esgi
+show esgi
+exit
+db.heroes.find()
+db.heroes.drop()
+db.heroes.find()
+db.heroes.insertMany([{"FirstName": "Bruce", "LastName": "Wayne", "Email": "bwayne@Wayneenterprises.com"},{"FirstName": "Tony", "LastName": "Stark", "Email": "stronger@avengers.com"}])
+db.createCollection('movies')
+Db.create() collection
+Db.create collection
+show collections
+Shows collections
+Show collections
+db.version()
+mongod --version
+mongodb -v
